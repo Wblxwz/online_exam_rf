@@ -2,6 +2,9 @@
 *** Settings ***
 Library    SeleniumLibrary
 
+*** Variables ***
+${url}    http://localhost:8080
+
 *** Keywords ***
 Login
     [Arguments]    ${url}    ${username}    ${password}
