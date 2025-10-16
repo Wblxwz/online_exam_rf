@@ -19,4 +19,6 @@ LoginStudent
         Fail    msg=学生登录失败
     END
     Log    message='student log in'
+    Capture Page Screenshot    filename=${OUTPUTDIR}/student_login.png
+    File Should Exist    path=${OUTPUT_DIR}/student_login.png    msg=学生主页截图失败
     Close Browser

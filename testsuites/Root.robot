@@ -18,4 +18,6 @@ LoginRoot
         Fail    msg=管理员登录失败
     END
     Log    message='root log in'
+    Capture Page Screenshot    filename=${OUTPUTDIR}/root_login.png
+    File Should Exist    path=${OUTPUT_DIR}/root_login.png    msg=管理员主页截图失败
     Close Browser

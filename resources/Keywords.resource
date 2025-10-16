@@ -1,6 +1,7 @@
 
 *** Settings ***
 Library    SeleniumLibrary
+Library    OperatingSystem
 
 *** Variables ***
 ${url}    http://localhost:8080

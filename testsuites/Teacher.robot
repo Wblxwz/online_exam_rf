@@ -18,4 +18,7 @@ LoginTeacher
         Fail    msg=教师登录失败
     END
     Log    message='teacher log in'
+    Capture Page Screenshot    filename=${OUTPUTDIR}/teacher_login.png
+    File Should Exist    path=${OUTPUT_DIR}/teacher_login.png    msg=教师主页截图失败
     Close Browser
+
